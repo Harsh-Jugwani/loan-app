@@ -3,6 +3,8 @@ import LoanApplicationForm from "./LoanApplicationForm";
 import { RouterProvider } from "react-router-dom";
 import ApplicationStatus from "./ApplicationStatus";
 import LoanPay from "./LoanPay";
+import Login from "./Login";
+import Admin from "./Admin";
 
 
 const Body = () => {
@@ -18,6 +20,14 @@ const Body = () => {
     {
       path: "/loanpay",
       element: <LoanPay/>
+    },
+    {
+      path: "/login",
+      element: <Login/>
+    },
+    {
+      path: "/admin",
+      element: <Admin/>
     },
    
   ]);
